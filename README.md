@@ -4,6 +4,25 @@
 ## Description
 **Personal Email Client** is a full-stack application that serves as your personal email manager. This multipurpose web application enables you to draft creative emails with a rich text editor and add multiple attachments. It also imports emails from various Gmail folders like Inbox, Sent, Personal, and more. With its versatile features, Personal Email Client helps you manage your email-related tasks efficiently and creatively.
 
+## Demo
+
+### Compose Email Screen
+
+![Compose Email](https://github.com/ameyad2/Personal-Email-Client/blob/master/images-demo/ComposeEmail.JPG?raw=true)
+
+This screenshot shows the email composition interface where users can draft and send emails. It includes features like rich text formatting, attachment support, and more.
+
+### Sending Email Screen
+
+![Sending Email](https://github.com/ameyad2/Personal-Email-Client/blob/master/images-demo/SendingEmail.JPG?raw=true)
+
+This screenshot illustrates the process of sending an email. It demonstrates the user interface and options available during the sending process.
+
+### Mail Screen on Gmail (Tested Emails)
+![Tested Emails](https://github.com/ameyad2/Personal-Email-Client/blob/master/images-demo/TestedEmails.JPG?raw=true)
+
+This screenshot shows the email in the Gmail interface after being sent using the Personal Email Client. It verifies that the email was successfully delivered.
+
 ## Installation
 
 ### Front End
