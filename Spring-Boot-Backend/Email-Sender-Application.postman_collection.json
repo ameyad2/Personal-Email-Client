@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "2f185fe5-4c5c-4c7d-b07e-48e175b9affe",
+		"name": "Email-Sender-Application",
+		"description": "Api Collection consists of  \n1) Send Email API  \n2) Send Email with Attachement  \n3) Get All Sent Emails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20336476"
+	},
+	"item": [
+		{
+			"name": "send email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":\"abc@gmail.com\",\r\n    \"subject\":\"Email via Postman: HTML\",\r\n    \"message\": \"<h1>Email Sent using Postman with HTML</h1>\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/email/send",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send with file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/rooms/room-8.jpg"
+						},
+						{
+							"key": "request",
+							"value": "{\n    \"to\":\"abc@gmail.com\",\n    \"subject\":\"Email via Postman: file by Ameya\",\n    \"message\": \"Email Sent using Postman with file to abc\"\n}",
+							"contentType": "application/json",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/email/send-with-file",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"send-with-file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get sent emails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/email/get-sent-emails",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email",
+						"get-sent-emails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
